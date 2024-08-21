@@ -1,0 +1,126 @@
+* {
+    highlight:            bold italic ;
+    scrollbar:            true;
+    background-color:     var(background);
+    background :          #282A2E;
+    background-alt:       #373B41;
+    foreground:           #C5C8C6;
+    primary:              #F0C674;
+    secondary:            #8ABEB7;
+    alert:                #A54242;
+    disabled:             #707880;
+}
+window {
+    padding:          2;
+    background-color: var(background);
+    border:           2;
+    border-radius:    0 0 6px 6px;
+    border-color: var(disabled);
+}
+mainbox {
+    padding: 10px;
+}
+message {
+    padding:      6px ;
+    border-color: var(disabled);
+    border:       2px 2px 2px ;
+    border-radius:  0 0 6px 6px;
+}
+textbox {
+    highlight:  var(foreground);
+    text-color: var(primary);
+}
+listview {
+    padding:      2px 0px 0px ;
+    scrollbar:    var(disabled);
+    border-color: var(disabled);
+    spacing:      2px ;
+    border:       2px 0px 0px ;
+}
+element {
+    padding: 2px ;
+    border:  0;
+}
+element normal.normal {
+    background-color: var(background);
+    text-color:       var(disabled);
+}
+element normal.urgent {
+    background-color: var(background);
+    text-color:       var(foreground);
+}
+element normal.active {
+    background-color: var(background);
+    text-color:       var(foreground);
+}
+element selected.normal {
+    background-color: var(background-alt);
+    text-color:       var(primary);
+}
+element selected.urgent {
+    background-color: var(background);
+    text-color:       var(foreground);
+}
+element selected.active {
+    background-color: var(background);
+    text-color:       var(foreground);
+}
+element alternate.normal {
+    background-color: var(background);
+    text-color:       var(foreground);
+}
+element alternate.urgent {
+    background-color: var(background);
+    text-color:       var(foreground);
+}
+element alternate.active {
+    background-color: var(background);
+    text-color:       var(foreground);
+}
+scrollbar {
+    width:        2px ;
+    padding:      2px;
+    handle-width: 4px ;
+    handle-color: var(disabled);
+}
+
+inputbar {
+    padding:    2px ;
+    spacing:    0;
+    text-color: var(disabled);
+    children:   [ "prompt","textbox-prompt-sep","entry","case-indicator" ];
+}
+case-indicator {
+    spacing:    0;
+    text-color: var(foreground);
+}
+entry {
+    spacing:    0;
+    text-color: var(foreground);
+}
+prompt {
+    spacing:    0;
+    text-color: var(primary);
+}
+button {
+    spacing:    0;
+    text-color: var(foreground);
+}
+button selected {
+    background-color: var(background);
+    text-color:       var(foreground);
+}
+textbox-prompt-sep {
+    margin:     0px 0.3000em 0px 0px ;
+    expand:     false;
+    str:        ":";
+    text-color: var(foreground);
+}
+element-text {
+    background-color: inherit;
+    text-color:       inherit;
+}
+element-icon {
+    background-color: inherit;
+    text-color:       inherit;
+}
