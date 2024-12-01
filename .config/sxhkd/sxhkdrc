@@ -160,3 +160,13 @@ super + shift + {1-9,0}
 # Send to monitor
 super + shift + equal
     bspc node -m last --follow
+
+Print
+  flameshot gui
+
+
+# Lock screen
+super + shift + x
+  betterlockscreen -l dim --dim 100 --blur 50
+
+
