@@ -34,7 +34,7 @@ super + Escape
 #
 
 # quit/restart bspwm
-super + alt + {q,r}
+super + alt + ctrl {q,r}
 	bspc {quit,wm -r}
 
 # close and kill
@@ -135,6 +135,11 @@ super + alt + shift + {h,j,k,l}
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
+# resize windows
+super + alt + {Left,Down,Up,Right}
+    STEP=20; SELECTION={1,2,3,4}; \
+    bspc node -z $(echo "left -$STEP 0,bottom 0 $STEP,top 0 -$STEP,right $STEP 0" | cut -d',' -f$SELECTION) || \
+    bspc node -z $(echo "right -$STEP 0,top 0 $STEP,bottom 0 -$STEP,left $STEP 0" | cut -d',' -f$SELECTION)
 
 
 XF86AudioRaiseVolume
@@ -169,4 +174,6 @@ Print
 super + shift + x
   betterlockscreen -l dim --dim 100 --blur 50
 
-
+# pause music/video
+super + r
+  playerctl play-pause
