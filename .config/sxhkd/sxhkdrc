@@ -177,3 +177,7 @@ super + shift + x
 # pause music/video
 super + r
   playerctl play-pause
+
+
+
+
