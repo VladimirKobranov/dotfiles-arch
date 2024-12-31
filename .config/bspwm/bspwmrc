@@ -6,20 +6,11 @@ nitrogen --restore &
 xsetroot -cursor_name left_ptr
 # playerctld
 
-# dual monitor
-# if [ -x $HOME/.config/bspwm ]; then
-#   dual_monitor_setup
-# fi
 bash ~/.config/bspwm/dual_monitor_setup.sh
-
-# # polybar
-# if [ -x ~.config/polybar ]; then
-#   bash $HOME/.config/polybar/dual_monitor_setup.sh
-# fi
 
 pgrep -x sxhkd >/dev/null || sxhkd &
 
-bspc monitor -d 󰣇     
+bspc monitor -d 󰣇      
 bspc monitor HDMI-2 -d x x x x x
 
 bspc config border_width 2
