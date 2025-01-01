@@ -21,6 +21,11 @@ super + b
     # kitty -d "$(pwd)"
     # kitty @ launch --cwd $(kitty @ ls | jq -r 'map(select(.is_focused)) | .[0].cwd')
 
+
+# telegram 
+super + t
+  telegram-desktop
+
 # program launcher
 super + @space
 	rofi -show drun -show-icons
