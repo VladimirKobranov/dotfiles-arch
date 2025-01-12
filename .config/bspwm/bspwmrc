@@ -11,6 +11,7 @@ bash ~/.config/bspwm/dual_monitor_setup.sh
 pgrep -x sxhkd >/dev/null || sxhkd &
 
 bspc monitor -d 󰣇      
+# bspc monitor -d 󰣇   IV V VI VII
 bspc monitor HDMI-2 -d x x x x x
 
 bspc config border_width 2
