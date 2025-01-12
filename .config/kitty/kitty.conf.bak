@@ -18,7 +18,8 @@
 #: families that have many weight variants like Book, Medium, Thick,
 #: etc. For example::
 
-font_family 	 FiraCode Nerd Font
+# font_family 	 FiraCode Nerd Font
+# font_family > JetBrainsMono Nerd Font Mono
 # bold_font        Operator Mono Medium
 # italic_font      Operator Mono Book Italic
 # bold_italic_font Operator Mono Medium Italic
@@ -411,8 +412,8 @@ map ctrl+e     launch --location=vsplit --cwd=current
 map ctrl+o     launch --location=hsplit --cwd=current
 map ctrl+enter launch --location=hsplit --cwd=current
 
-map ctrl+h      previous_window
-map ctrl+l      next_window
+# map ctrl+h      previous_window
+# map ctrl+l      next_window
 
 
 #: The enabled window layouts. A comma separated list of layout names.
@@ -619,7 +620,7 @@ inactive_tab_font_style normal
 
 #: The foreground and background colors
 
-background_opacity 0.9
+background_opacity 0.5
 
 #: The opacity of the background. A number between 0 and 1, where 1 is
 #: opaque and 0 is fully transparent.  This will only work if
@@ -1034,14 +1035,14 @@ map shift+insert paste_from_selection
 #: Scrolling {{{
 
 map ctrl+up        scroll_line_up
-map ctrl+k         scroll_line_up
+# map ctrl+k         scroll_line_up
 map ctrl+down      scroll_line_down
-map ctrl+j         scroll_line_down
+# map ctrl+j         scroll_line_down
 map ctrl+page_up   scroll_page_up
 map ctrl+page_down scroll_page_down
 map ctrl+home      scroll_home
 map ctrl+end       scroll_end
-map kitty_mod+h    show_scrollback
+# map kitty_mod+h    show_scrollback
 
 #: You can pipe the contents of the current screen + history buffer as
 #: STDIN to an arbitrary program using the ``launch`` function. For
@@ -1256,8 +1257,10 @@ map kitty_mod+delete clear_terminal reset active
 #: It is also possible to remap Ctrl+L to both scroll the current
 #: screen contents into the scrollback buffer and clear the screen,
 #: instead of just clearing the screen::
+# map ctrl+l combine : clear_terminal scroll active : send_text normal,application \x0c
 
-#:     map ctrl+l combine : clear_terminal scroll active : send_text normal,application \x0c
+# map ctrl+f launch --cwd=current
+
 
 
 #: You can tell kitty to send arbitrary (UTF-8) encoded text to the
@@ -1289,6 +1292,14 @@ map kitty_mod+delete clear_terminal reset active
 
 
 # BEGIN_KITTY_THEME
-# Nord
-include current-theme.conf
+# Adapta Nokto Maia
+# include current-theme.conf
 # END_KITTY_THEME
+
+
+# BEGIN_KITTY_FONTS
+font_family      family="JetBrainsMono Nerd Font"
+bold_font        auto
+italic_font      auto
+bold_italic_font auto
+# END_KITTY_FONTS
