@@ -1,0 +1,20 @@
+# VK
+# linux config
+
+
+background = #000000
+
+background-opacity = 0.5
+
+window-decoration=false
+
+keybind=ctrl+shift+r=reload_config
+
+# keybind=ctrl+n=new_window
+
+
+
+
+confirm-close-surface=false
+
+

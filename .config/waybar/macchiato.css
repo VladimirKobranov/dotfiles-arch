@@ -1,0 +1,26 @@
+@define-color rosewater #e6d5c9; /* светлый песочный */
+@define-color flamingo #d4c3b5; /* бледно-коричневый */
+@define-color pink #c7b5a6; /* приглушенный розовый-бежевый */
+@define-color mauve #a69887; /* серо-коричневый */
+@define-color red #8b4513; /* темно-коричневый */
+@define-color maroon #654321; /* древесный коричневый */
+@define-color peach #deb887; /* песочный */
+@define-color yellow #d2b48c; /* светлый охристый */
+@define-color green #2f4f4f; /* темный зелено-серый */
+@define-color teal #3a5f5f; /* приглушенный темно-зеленый */
+@define-color sky #4a766e; /* зелено-голубой */
+@define-color sapphire #486b6b; /* темный сине-зеленый */
+@define-color blue #374c4c; /* темный серо-синий */
+@define-color lavender #8f9779; /* серо-зеленый */
+@define-color text #e8e6e3; /* светлый серый */
+@define-color subtext1 #d1cdc7; /* светло-серый */
+@define-color subtext0 #bab5ae; /* средний серый */
+@define-color overlay2 #a39e95; /* серый */
+@define-color overlay1 #8c867c; /* темно-серый */
+@define-color overlay0 #756f63; /* более темный серый */
+@define-color surface2 #5e584a; /* темный коричнево-серый */
+@define-color surface1 #474031; /* очень темный коричневый */
+@define-color surface0 #302b22; /* почти черный коричневый */
+@define-color base #242014; /* темный фон */
+@define-color mantle #1c1911; /* более темный фон */
+@define-color crust #15120d; /* самый темный фон */
