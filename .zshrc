@@ -129,3 +129,15 @@ source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 # Created by `pipx` on 2025-01-14 09:25:03
 export PATH="$PATH:/home/vk/.local/bin"
+
+
+
+# emscripten sdk path
+ # source "/home/vk/Downloads/emsdk/emsdk_env.sh"
+ #
+
+
+
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools

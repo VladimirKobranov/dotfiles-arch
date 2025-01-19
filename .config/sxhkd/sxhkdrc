@@ -23,7 +23,7 @@ super + b
 
 
 # telegram 
-super + t
+super + shift + t
   telegram-desktop
 
 # program launcher
