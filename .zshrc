@@ -141,3 +141,10 @@ export PATH="$PATH:/home/vk/.local/bin"
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+# bun completions
+[ -s "/home/vk/.bun/_bun" ] && source "/home/vk/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
