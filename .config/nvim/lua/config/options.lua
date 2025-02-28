@@ -6,3 +6,8 @@ vim.g.snacks_animate = false
 -- vim.opt.clipboard = "copyq"
 
 -- vim.g.lazyvim_picker = "fzf"
+--
+--
+
+local opt = vim.opt
+opt.relativenumber = false
