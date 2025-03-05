@@ -38,6 +38,10 @@ set wildmode=list:longest     " List matches and complete up to the longest comm
 set laststatus=2              " Always display the status line
 set confirm                   " Ask to save changes when exiting
 
+" Turn stupid sound off
+set belloff=all
+
+
 "===============================
 " Backup and Swap File Settings
 "===============================
