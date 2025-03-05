@@ -37,10 +37,7 @@ set wildmenu                  " Enhanced command-line completion
 set wildmode=list:longest     " List matches and complete up to the longest common string
 set laststatus=2              " Always display the status line
 set confirm                   " Ask to save changes when exiting
-
-" Turn stupid sound off
-set belloff=all
-
+set belloff=all               " Turn stupid sound off
 
 "===============================
 " Backup and Swap File Settings
