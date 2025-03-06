@@ -1,0 +1,132 @@
+@define-color rosewater rgba(230,213,201,1);
+@define-color flamingo rgba(212,195,181,1);
+@define-color pink rgba(199,181,166,1);
+@define-color mauve rgba(166,152,135,1);
+@define-color red rgba(139,69,19,1);
+@define-color maroon rgba(101,67,33,1);
+@define-color peach rgba(222,184,135,1);
+@define-color yellow rgba(210,180,140,1);
+@define-color green rgba(47,79,79,1);
+@define-color teal rgba(58,95,95,1);
+@define-color sky rgba(74,118,110,1);
+@define-color sapphire rgba(72,107,107,1);
+@define-color blue rgba(55,76,76,1);
+@define-color lavender rgba(143,151,121,1);
+@define-color text rgba(232,230,227,1);
+@define-color subtext1 rgba(209,205,199,1);
+@define-color subtext0 rgba(186,181,174,1);
+@define-color overlay2 rgba(163,158,149,1);
+@define-color overlay1 rgba(140,134,124,1);
+@define-color overlay0 rgba(117,111,99,1);
+@define-color surface2 rgba(94,88,74,1);
+@define-color surface1 rgba(71,64,49,1);
+@define-color surface0 rgba(48,43,34,1);
+@define-color base rgba(36,32,20,0.5); /* Semi-transparent for blur effect */
+@define-color mantle rgba(28,25,17,1);
+@define-color crust rgba(21,18,13,1);
+
+* {
+  font-family: "JetBrains Nerd Font", monospace;
+  font-size: 18px;
+}
+
+/* Window */
+window {
+  margin: 0px;
+  padding: 10px;
+  border: 2px solid @lavender;
+  border-radius: 10px;
+  background-color: @base;
+}
+
+/* Inner Box */
+#inner-box {
+  margin: 5px;
+  padding: 10px;
+  background-color: transparent;
+}
+
+/* Outer Box */
+#outer-box {
+  margin: 5px;
+  padding: 10px;
+  background-color: transparent;
+}
+
+/* Input */
+#input {
+  margin: 5px 20px;
+  padding: 10px;
+  border: 2px solid @lavender;
+  border-radius: 10px;
+  color: @text;
+  background-color: rgba(36, 32, 20, 0.7);
+}
+
+#input image {
+  color: @peach;
+  margin-right: 5px;
+}
+
+#input * {
+  outline: none !important;
+}
+
+/* Text */
+#text {
+  margin: 5px;
+  color: @text;
+}
+
+/* Entry */
+#entry {
+  background-color: transparent;
+  padding: 8px 5px;
+  margin: 3px 0;
+  border-radius: 8px;
+  transition: all 0.15s ease;
+}
+
+/* Icon in entries */
+#entry image {
+  margin-right: 10px;
+  min-width: 24px;
+  color: @peach;
+}
+
+#entry arrow {
+  color: @lavender;
+}
+
+/* Selected Entry */
+#entry:selected {
+  border: 2px solid @lavender;
+  border-radius: 10px;
+  background-color: rgba(143, 151, 121, 0.4);
+}
+
+#entry:selected #text {
+  color: white;
+  font-weight: bold;
+}
+
+/* Hover effect */
+#entry:hover {
+  background-color: rgba(143, 151, 121, 0.2);
+}
+
+#entry:drop(active) {
+  background-color: rgba(143, 151, 121, 0.5) !important;
+}
+
+/* Scrollbar */
+scrollbar {
+  background-color: transparent;
+  margin: 0 5px;
+}
+
+scrollbar slider {
+  background-color: @lavender;
+  border-radius: 10px;
+  margin: 2px;
+}
