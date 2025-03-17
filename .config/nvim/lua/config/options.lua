@@ -3,11 +3,10 @@
 -- Add any additional options here
 
 vim.g.snacks_animate = false
--- vim.opt.clipboard = "copyq"
-
--- vim.g.lazyvim_picker = "fzf"
---
---
+vim.g.autoformat = false
 
 local opt = vim.opt
 opt.relativenumber = false
+
+-- vim.opt.clipboard = "copyq"
+-- vim.g.lazyvim_picker = "fzf"
