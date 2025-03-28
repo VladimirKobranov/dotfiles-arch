@@ -2,13 +2,12 @@
   "margin-top" : 5,
     "margin-left": 10,
     "margin-right": 10,
-    //"margin-bottom": 5,
     "height" : 25,
     "modules-left": [
       "hyprland/window"
     ],
     "modules-center": [
-      "hyprland/workspaces",
+      "hyprland/workspaces"
     ],
     "modules-right": [
     "pulseaudio",
@@ -18,7 +17,7 @@
     "cpu",
     "memory",
     "battery",
-    "clock",
+    "clock"
     ],
     "hyprland/window": {
       "format": "{}",
@@ -26,41 +25,44 @@
       "rewrite": {
         "": "Harsh"
       },
-      "separate-outputs": true,
+      "separate-outputs": true
     },
     "hyprland/workspaces": {
       "format": "{icon}",
       "on-click": "activate",
       "format-icons": {
-        "active": " ",
+        "1": "󰣇",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": "",
+        "urgent": "",
+        "active": "",
+        "default": ""
       },
       "sort-by-number": true,
       "persistent-workspaces": {
-        "*": 4, // 5 workspaces by default on every monitor
-        "HDMI-A-1": 3 // but only three on HDMI-A-1
-      },
+        "*": 5, 
+        "HDMI-A-1": 5
+      }
     },
-    //"clock": {
-    //  "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    //  "format-alt": "{:%Y-%m-%d}"
-    //},
 
 "clock": {
-    "format": "{:%Y-%m-%d | %H:%M }",
-    "tooltip-format": "<tt><small>{calendar}</small></tt>",
-    "calendar": {
-                "mode"          : "year",
-                "mode-mon-col"  : 3,
-                "weeks-pos"     : "right",
-                "on-scroll"     : 1,
-                "format": {
-                          "months":     "<span color='#e6d5c9'><b>{}</b></span>",  // rosewater
-                          "days":       "<span color='#c7b5a6'><b>{}</b></span>",  // pink
-                          "weeks":      "<span color='#4a766e'><b>W{}</b></span>", // sky
-                          "weekdays":   "<span color='#deb887'><b>{}</b></span>",  // peach
-                          "today":      "<span color='#8b4513'><b><u>{}</u></b></span>"  // red
-                          }
-                },
+  "format": "{:%Y-%m-%d | %H:%M }",
+  "tooltip-format": "<tt><small>{calendar}</small></tt>",
+  "calendar": {
+    "mode"          : "year",
+    "mode-mon-col"  : 3,
+    "weeks-pos"     : "right",
+    "on-scroll"     : 1,
+    "format": {
+      "months":     "<span color='#e6d5c9'><b>{}</b></span>",  // rosewater
+      "days":       "<span color='#c7b5a6'><b>{}</b></span>",  // pink
+      "weeks":      "<span color='#4a766e'><b>W{}</b></span>", // sky
+      "weekdays":   "<span color='#deb887'><b>{}</b></span>",  // peach
+      "today":      "<span color='#8b4513'><b><u>{}</u></b></span>"  // red
+    }
+  }
 },
 
 "cpu": {
@@ -118,5 +120,5 @@
         "default": ["", "", ""]
       },
       "on-click": "pavucontrol"
-    },
+    }
 }

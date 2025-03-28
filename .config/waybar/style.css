@@ -13,32 +13,31 @@ window#waybar {
 }
 
 button {
-  /* Use box-shadow instead of border so the text isn't offset */
   box-shadow: inset 0 -3px transparent;
-  /* Avoid rounded borders under each button name */
   border: none;
   border-radius: 0;
+  color: @pink;
 }
 
-/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 button:hover {
   background: inherit;
   box-shadow: inset 0 -3px #ffffff;
 }
 
-/* you can set a style on hover for any module like this */
 #pulseaudio:hover {
   background-color: @surface2;
 }
 
 #workspaces button {
   padding: 0 5px;
-  /*background-color: transparent;*/
   color: @pink;
 }
 #workspaces button:not(.active) {
-  color: @surface2;
-  /*background-color: transparent;*/
+  color: @pink;
+}
+
+#workspaces button.active{
+  color: @red;
 }
 
 #workspaces button:hover {
@@ -52,6 +51,12 @@ button:hover {
 
 #workspaces button.urgent {
   background-color: #eb4d4b;
+}
+
+#workspaces button.empty{
+  /* background-color: @pink */
+  color: @surface2;
+  /* font-weight: bold; */
 }
 
 #mode {
