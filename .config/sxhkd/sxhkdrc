@@ -186,6 +186,8 @@ super + shift + x
 super + r
   playerctl play-pause
 
-
+# file manager dolphin
+super + d
+  dolphin
 
 
