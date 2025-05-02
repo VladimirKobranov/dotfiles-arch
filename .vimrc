@@ -13,6 +13,7 @@ set smartcase                 " Case-sensitive if search contains uppercase
 set autoindent                " Copy indent from the current line when starting a new line
 set smartindent               " Enable smart indenting when starting a new line
 
+
 "===============================
 " Tab and Indentation Settings
 "===============================
