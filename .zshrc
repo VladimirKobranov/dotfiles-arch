@@ -151,3 +151,6 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # doom
 export PATH="$HOME/.emacs.d/bin:$PATH"
+
+# zoxide | finder for terminal 
+eval "$(zoxide init zsh)"
