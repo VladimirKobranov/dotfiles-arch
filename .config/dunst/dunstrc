@@ -1,0 +1,43 @@
+# ~/.config/dunst/dunstrc
+[global]
+    # geometry & position
+    geometry = "300x5-10+30"
+    origin = top-right
+    offset = (8, 49)
+
+    # colours & fonts
+    background = "#282A2E"
+    foreground = "#C5C8C6"
+    frame_color = "#F0C674"
+    separator_color = "#707880"
+    transparency = 5
+    padding = 10
+    horizontal_padding = 6
+    frame_width = 2
+    corner_radius = 5
+    markup = full
+    font = "JetBrainsMono Nerd Font 11"
+
+    # behaviour
+    sort = yes
+    notification_limit = 0
+    show_indicators = yes
+    ignore_dbusclose = false
+
+[urgency_low]
+    background = "#373B41"
+    foreground = "#8ABEB7"
+    frame_color = "#8ABEB7"
+    timeout = 4
+
+[urgency_normal]
+    background = "#282A2E"
+    foreground = "#C5C8C6"
+    frame_color = "#F0C674"
+    timeout = 6
+
+[urgency_critical]
+    background = "#282A2E"
+    foreground = "#A54242"
+    frame_color = "#A54242"
+    timeout = 8
