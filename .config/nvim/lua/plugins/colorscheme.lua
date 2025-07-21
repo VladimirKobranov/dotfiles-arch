@@ -13,5 +13,5 @@ return {
       --   folds = false,
       -- },
     }
-  end
+  end,
 }
