@@ -46,18 +46,6 @@ set belloff=all               " Turn stupid sound off
 set nobackup                  " Don't create backup files
 set noswapfile                " Don't create swap files
 
-"===============================
-" Plugin Configuration
-"===============================
-" Using Vim-Plug
-call plug#begin('~/.vim/plugged')
-
-" Plugins
-Plug 'preservim/nerdtree'     " File Explorer
-Plug 'tpope/vim-commentary'   " Quick Commenting
-Plug 'morhetz/gruvbox'        " Gruvbox Theme
-
-call plug#end()
 
 "===============================
 " Visual and UI Settings
@@ -70,15 +58,6 @@ set scrolloff=5               " Keep 5 lines visible above/below the cursor
 "===============================
 " Theme and Colors
 "===============================
-" Gruvbox theme settings
-let g:gruvbox_contrast_dark = 'medium'
-let g:gruvbox_italic = 1
-
-if exists('+termguicolors')
-    set termguicolors         " Enable true colors
-endif
-colorscheme gruvbox           " Set Gruvbox as the colorscheme
-
 " Make elements transparent
 autocmd vimenter * hi Normal guibg=NONE ctermbg=NONE
 autocmd vimenter * hi SignColumn guibg=NONE ctermbg=NONE
@@ -104,21 +83,5 @@ nnoremap <leader>w :w<CR>     " Save with <leader>w
 nnoremap <leader>q :q<CR>     " Quit with <leader>q
 nnoremap <leader>c :nohlsearch<CR> " Clear search highlighting with <leader>c
 
-"===============================
-" NERDTree Configuration
-"===============================
-" Autostart NERDTree if Vim opens with a directory argument
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists('s:std_in') |
-    \ execute 'NERDTree' argv()[0] | wincmd p | enew | execute 'cd '.argv()[0] | endif
+nnoremap <leader>e :Explore<CR> " Toggle explore with <leader>n
 
-" Close Vim if NERDTree is the only window left
-autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
-
-" NERDTree Key Mappings
-nnoremap <leader>e :NERDTreeToggle<CR> " Toggle NERDTree with <leader>n
-nnoremap <leader>f :NERDTreeFind<CR>   " Find the current file in NERDTree
-
-" NERDTree Options
-let NERDTreeShowHidden = 1    " Show hidden files
-let g:NERDTreeWinSize = 30    " Set default NERDTree window size
