@@ -122,6 +122,7 @@ source $ZSH/oh-my-zsh.sh
 
 # NVIM as VIM
 alias vim='nvim'
+alias ls='eza'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
