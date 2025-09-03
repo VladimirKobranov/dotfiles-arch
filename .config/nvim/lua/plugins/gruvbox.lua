@@ -1,12 +1,12 @@
 return {
-  -- add gruvbox
-  { "ellisonleao/gruvbox.nvim" },
-
-  -- Configure LazyVim to load gruvbox
   {
-    "LazyVim/LazyVim",
+    "ellisonleao/gruvbox.nvim",
     opts = {
-      colorscheme = "gruvbox",
+      transparent_mode = true,
     },
+    config = function(_, opts)
+      require("gruvbox").setup(opts)
+      vim.cmd("colorscheme gruvbox")
+    end,
   },
 }
