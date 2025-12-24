@@ -13,7 +13,7 @@ background-opacity = 1.0
 #===============================
 # Window-decoration
 #===============================
-window-decoration=false
+window-decoration=true
 
 #===============================
 # Keymaps
