@@ -1,0 +1,47 @@
+# Hyprlauncher configuration with Macchiato theme matching Hyprland
+
+[general]
+# Terminal to use for launching applications
+terminal = ghostty
+
+[appearance]
+# Window styling
+border_width = 2
+border_color = rgba(212, 195, 181, 1)  # $flamingo
+background_color = rgba(39, 39, 39, 0.95)  # $base with transparency
+text_color = rgba(232, 230, 227, 1)  # $text
+
+# Selection styling
+selected_border_color = rgba(166, 152, 135, 1)  # $mauve
+selected_background_color = rgba(71, 64, 49, 1)  # $surface1
+selected_text_color = rgba(232, 230, 227, 1)  # $text
+
+# Font
+font = "JetBrains Mono Nerd Font 12"
+
+# Window properties
+window_width = 600
+window_height = 400
+window_corner_radius = 8
+padding = 20
+
+# Search styling
+search_prompt = "Apps: "
+search_border_color = rgba(143, 151, 121, 1)  # $lavender
+search_background_color = rgba(48, 43, 34, 1)  # $surface0
+
+[behavior]
+# Search behavior
+fuzzy_search = true
+case_sensitive = false
+show_desktop_entries = false
+
+# Performance
+max_entries = 50
+cache_enabled = true
+
+[keybindings]
+# Key bindings
+accept_key = Return
+cancel_key = Escape
+delete_char_key = BackSpace
